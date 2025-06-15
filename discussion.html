@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Discussion | Dayananda B N</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="js/darkMode.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Dayananda B N</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="discussion.html">Discussion</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="darkModeToggle" class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="development-notice">
+      <p class="alert alert-warning">
+          <i class="fas fa-tools"></i>
+          <strong>Note:</strong> This page is currently under development. Content and features may be incomplete or subject to change.
+      </p>
+    </div>
+
+    <div class="discussion-section">
+      <h2>Discussion Forum</h2>
+      
+      <div class="post-form">
+        <h3>Create a New Post</h3>
+        <form id="discussionForm">
+          <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="6" required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">Post</button>
+        </form>
+      </div>
+
+      <div class="posts-container">
+        <h3>Recent Discussions</h3>
+        <div id="posts-list">
+          <!-- Posts will be dynamically added here -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Dayananda B N. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/dayananda-b-n/" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Daya-AWR1642" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://scholar.google.com/citations?user=vFFmqaAAAAAJ&hl=en" target="_blank" title="Google Scholar">
+          <i class="fas fa-graduation-cap"></i>
+        </a>
+        <a href="https://www.researchgate.net/profile/Dayananda-B-N" target="_blank" title="ResearchGate">
+          <i class="fab fa-researchgate"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/discussion.js"></script>
+
+  <style>
+    .development-notice {
+        margin: 20px 0;
+        padding: 15px;
+        background-color: #fff3cd;
+        border: 1px solid #ffeeba;
+        border-radius: 4px;
+    }
+
+    .development-notice p {
+        margin: 0;
+        color: #856404;
+    }
+
+    .development-notice i {
+        margin-right: 8px;
+    }
+  </style>
+</body>
+</html>
