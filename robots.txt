@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daya-awr1642.github.io/sitemap.xml
