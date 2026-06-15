@@ -2,57 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dayananda B N — Radar Signal Processing Engineer working on tracking, estimation and in-cabin sensing." />
   <title>Home | Dayananda B N</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="js/darkMode.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="js/main.js"></script>
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <h1>Dayananda B N</h1>
-      <nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">&#9698;&#9699;</span>
+        <span class="brand-name">Dayananda B N</span>
+      </a>
+      <nav class="nav" id="primaryNav">
         <a href="index.html">Home</a>
+        <a href="news.html">News</a>
         <a href="about.html">About</a>
         <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
         <a href="discussion.html">Discussion</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <button id="darkModeToggle" class="dark-mode-toggle">
-        <i class="fas fa-moon"></i>
-      </button>
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <button id="navToggle" class="icon-btn nav-toggle" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+      </div>
     </div>
   </header>
+
   <main>
-    <div class="hero-section">
-      <img src="images/radar-background.png" alt="Radar Background" class="hero-image">
+    <section class="container hero">
       <div class="hero-text">
-        <p>Weird Radar Boy interested in Tracking</p>
+        <p class="eyebrow">Radar &middot; SLAM &middot; Tracking</p>
+        <h1>Hi, I'm Dayananda &mdash;<br>the <span class="accent">Radar Boy</span>.</h1>
+        <p class="hero-lead">Graduate researcher at the University of Chile with a deep obsession for radar, SLAM and multi-target tracking. I turn raw sensor data into reliable insight.</p>
+        <ul class="hero-tags">
+          <li>Radar Signal Processing</li>
+          <li>SLAM &amp; Navigation</li>
+          <li>Multi-Target Tracking</li>
+          <li>Random Finite Sets</li>
+        </ul>
+        <div class="hero-cta">
+          <a href="research.html" class="btn btn-primary"><i class="fas fa-satellite-dish"></i> Explore Research</a>
+          <a href="about.html" class="btn btn-ghost">About Me</a>
+        </div>
       </div>
-    </div>
+      <div class="radar-wrap">
+        <div class="radar" aria-hidden="true">
+          <span class="blip b1"></span>
+          <span class="blip b2"></span>
+          <span class="blip b3"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <header class="section-head">
+        <p class="eyebrow">Latest</p>
+        <h2 class="section-title">News &amp; Updates</h2>
+      </header>
+      <div class="news-list" data-news data-limit="3"></div>
+      <p class="news-more"><a href="news.html" class="btn btn-ghost">See all updates <i class="fas fa-arrow-right"></i></a></p>
+    </section>
   </main>
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 Dayananda B N. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/dayananda-b-n/" target="_blank" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/Daya-AWR1642" target="_blank" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://scholar.google.com/citations?user=vFFmqaAAAAAJ&hl=en" target="_blank" title="Google Scholar">
-          <i class="fas fa-graduation-cap"></i>
-        </a>
-        <a href="https://www.researchgate.net/profile/Dayananda-B-N" target="_blank" title="ResearchGate">
-          <i class="fab fa-researchgate"></i>
-        </a>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Dayananda B N</strong>
+        <p>Radar &amp; SLAM Researcher</p>
       </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/dayananda-b-n/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Daya-AWR1642" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com/citations?user=vFFmqaAAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://www.researchgate.net/profile/Dayananda-B-N" target="_blank" rel="noopener" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+      </div>
+      <p class="copyright">&copy; <span id="year">2025</span> Dayananda B N. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="js/news.js"></script>
 </body>
 </html>

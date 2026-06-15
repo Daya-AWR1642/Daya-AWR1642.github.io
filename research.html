@@ -2,88 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Research interests of Dayananda B N — radar signal processing, estimation theory, multi-target tracking and sensor fusion." />
   <title>Research | Dayananda B N</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="js/darkMode.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="js/main.js"></script>
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <h1>Dayananda B N</h1>
-      <nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">&#9698;&#9699;</span>
+        <span class="brand-name">Dayananda B N</span>
+      </a>
+      <nav class="nav" id="primaryNav">
         <a href="index.html">Home</a>
+        <a href="news.html">News</a>
         <a href="about.html">About</a>
         <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
         <a href="discussion.html">Discussion</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <button id="darkModeToggle" class="dark-mode-toggle">
-        <i class="fas fa-moon"></i>
-      </button>
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <button id="navToggle" class="icon-btn nav-toggle" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+      </div>
     </div>
   </header>
-  
-  <main>
-    <div class="research-section">
-      <h2>Research Specialization</h2>
-      <div class="research-areas">
-        <ul>
-          <li>
-            <h3>Radar Signal Processing</h3>
-            <p></p>
-          </li>
-          <li>
-            <h3>Estimation Theory</h3>
-            <p></p>
-          </li>
-          <li>
-            <h3>Multi Traget Tracking </h3>
-          </li>
-          <li>
-            <h3>Multi Sensor Information Fusion </h3>
-          </li>
-          <li>
-            <h3>Electromagnetic Warfare (Electronic Support Measures) </h3>
-          </li>
-          <li>
-            <h3>In-Cabin Sensing</h3>
-            <p></p>
-          </li>
-        </ul>
-      </div>
 
-      <h2>Love to learn more about these subjects</h2>
-      <div class="research-interests">
-        <div class="interest-category">
-          <h3>Mathematics</h3>
+  <main>
+    <section class="container section">
+      <header class="section-head">
+        <p class="eyebrow">What I work on</p>
+        <h2 class="section-title">Research Specialization</h2>
+      </header>
+
+      <ul class="research-areas grid grid-auto">
+        <li class="card"><span class="area-icon"><i class="fas fa-wave-square"></i></span><h3>Radar Signal Processing</h3></li>
+        <li class="card"><span class="area-icon"><i class="fas fa-chart-line"></i></span><h3>Estimation Theory</h3></li>
+        <li class="card"><span class="area-icon"><i class="fas fa-crosshairs"></i></span><h3>Multi-Target Tracking</h3></li>
+        <li class="card"><span class="area-icon"><i class="fas fa-object-group"></i></span><h3>Multi-Object Estimation</h3></li>
+        <li class="card"><span class="area-icon"><i class="fas fa-shapes"></i></span><h3>Random Finite Sets</h3></li>
+        <li class="card"><span class="area-icon"><i class="fas fa-robot"></i></span><h3>Robotic Navigation</h3></li>
+        <li class="card"><span class="area-icon"><i class="fas fa-map-location-dot"></i></span><h3>SLAM</h3></li>
+        <li class="card"><span class="area-icon"><i class="fas fa-network-wired"></i></span><h3>Multi-Sensor Information Fusion</h3></li>
+        <li class="card"><span class="area-icon"><i class="fas fa-shield-halved"></i></span><h3>Electronic Warfare (ESM)</h3></li>
+        <li class="card"><span class="area-icon"><i class="fas fa-car"></i></span><h3>In-Cabin Sensing</h3></li>
+      </ul>
+    </section>
+
+    <section class="container section">
+      <header class="section-head">
+        <p class="eyebrow">Always curious</p>
+        <h2 class="section-title">Subjects I Love to Learn</h2>
+      </header>
+
+      <div class="interests-grid">
+        <div class="card interest-category">
+          <h3><i class="fas fa-square-root-variable"></i> Mathematics</h3>
           <ul>
             <li>Probability Theory</li>
             <li>Linear Algebra</li>
-            <li>Stochastic Processing</li>
+            <li>Stochastic Processes</li>
             <li>Statistics</li>
             <li>Calculus</li>
             <li>Fourier Analysis</li>
             <li>Differential Equations</li>
             <li>Numerical Integration</li>
+            <li>Optimization</li>
+            <li>Manifolds</li>
+            <li>Riemannian Geometry</li>
+            <li>Combinatorics</li>
           </ul>
         </div>
-        
-        <div class="interest-category">
-          <h3>Physics</h3>
+
+        <div class="card interest-category">
+          <h3><i class="fas fa-atom"></i> Physics</h3>
           <ul>
             <li>Quantum Science</li>
             <li>Quantum Engineering</li>
             <li>Quantum Computation</li>
           </ul>
         </div>
-        
-        <div class="interest-category">
-          <h3>Computer Science</h3>
+
+        <div class="card interest-category">
+          <h3><i class="fas fa-microchip"></i> Computer Science</h3>
           <ul>
             <li>Data Structures and Analysis</li>
             <li>Computation Theory</li>
@@ -91,28 +99,34 @@
             <li>Algorithm Design</li>
           </ul>
         </div>
+
+        <div class="card interest-category">
+          <h3><i class="fas fa-robot"></i> Robotics</h3>
+          <ul>
+            <li>Robotic Navigation</li>
+            <li>SLAM</li>
+            <li>Perception &amp; Sensing</li>
+            <li>Motion Planning</li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
   </main>
 
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 Dayananda B N. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/dayananda-b-n/" target="_blank" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/Daya-AWR1642" target="_blank" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://scholar.google.com/citations?user=vFFmqaAAAAAJ&hl=en" target="_blank" title="Google Scholar">
-          <i class="fas fa-graduation-cap"></i>
-        </a>
-        <a href="https://www.researchgate.net/profile/Dayananda-B-N" target="_blank" title="ResearchGate">
-          <i class="fab fa-researchgate"></i>
-        </a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Dayananda B N</strong>
+        <p>Radar &amp; SLAM Researcher</p>
       </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/dayananda-b-n/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Daya-AWR1642" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com/citations?user=vFFmqaAAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://www.researchgate.net/profile/Dayananda-B-N" target="_blank" rel="noopener" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+      </div>
+      <p class="copyright">&copy; <span id="year">2025</span> Dayananda B N. All rights reserved.</p>
     </div>
-</footer>
+  </footer>
 </body>
 </html>

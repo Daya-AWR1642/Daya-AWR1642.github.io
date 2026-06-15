@@ -2,85 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Dayananda B N — radar researcher, NITK Surathkal ECE graduate and Radar Signal Processing Engineer." />
   <title>About | Dayananda B N</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="js/darkMode.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="js/main.js"></script>
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <h1>Dayananda B N</h1>
-      <nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">&#9698;&#9699;</span>
+        <span class="brand-name">Dayananda B N</span>
+      </a>
+      <nav class="nav" id="primaryNav">
         <a href="index.html">Home</a>
+        <a href="news.html">News</a>
         <a href="about.html">About</a>
         <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
         <a href="discussion.html">Discussion</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <button id="darkModeToggle" class="dark-mode-toggle">
-        <i class="fas fa-moon"></i>
-      </button>
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <button id="navToggle" class="icon-btn nav-toggle" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+      </div>
     </div>
   </header>
+
   <main>
-    <div class="about-section">
-      <div class="profile-image">
-        <img src="images/profile-photo.png" alt="Dayananda B N">
-      </div>
-      <div class="about-content">
-        <h2>About Me</h2>
-        <div class="bio">
-          <p>From my high school days, I've been deeply passionate about research in both Mathematics and Defence Technologies.</p>
+    <section class="container section">
+      <div class="about-grid">
+        <aside class="profile-card">
+          <img src="images/profile-photo.png" alt="Dayananda B N">
+        </aside>
+        <div class="about-content">
+          <header class="section-head">
+            <p class="eyebrow">Get to know me</p>
+            <h2 class="section-title">About Me</h2>
+          </header>
 
-          <p>During the second semester of my undergraduate studies, I reached out to <a href="https://ece.nitk.ac.in/faculty/pathipati-srihari" target="_blank">Dr. Pathipati Srihari</a>, expressing my keen interest in radar systems and requesting his guidance to pursue research under his mentorship. Since then, I've remained committed to the field of radar, continuously exploring its depths and applications.</p>
+          <div class="bio">
+            <p>From my high school days, I've been deeply passionate about research in both Mathematics and Defence Technologies.</p>
 
-          <p>During this period, I was also to engage in a long-term collaboration of three and a half years with my industrial advisor, <a href="https://scholar.google.com/citations?user=71LIoJYAAAAJ&hl=en" target="_blank">Dr. Bethi Pardhasaradhi</a>.</p>
+            <p>During the second semester of my undergraduate studies, I reached out to <a href="https://ece.nitk.ac.in/faculty/pathipati-srihari" target="_blank" rel="noopener">Dr. Pathipati Srihari</a>, expressing my keen interest in radar systems and requesting his guidance to pursue research under his mentorship. Since then, I've remained committed to the field of radar, continuously exploring its depths and applications.</p>
 
-          <div class="quote-box">
+            <p>During this period, I was also able to engage in a long-term collaboration of three and a half years with my industrial advisor, <a href="https://scholar.google.com/citations?user=71LIoJYAAAAJ&hl=en" target="_blank" rel="noopener">Dr. Bethi Pardhasaradhi</a>.</p>
+
+            <div class="quote-box">
               <i class="fas fa-quote-left"></i>
               <blockquote>
-                  My undergraduate peers often called me 'Radar Boy' because of my weird obsession with radar — a nickname I eventually embraced myself.
+                My undergraduate peers often called me 'Radar Boy' because of my weird obsession with radar &mdash; a nickname I eventually embraced myself.
               </blockquote>
-          </div>
-          <p>Currently, I'm working as Radar Signal Processing Engineer at <a href="https://www.harman.com/india" target="_blank">Harman International India Pvt Ltd</a>, focusing on in-cabin sensing technologies. Prior to this, I spent nearly four years as an undergraduate researcher under Dr. Srihari, gaining extensive hands-on experience in radar signal processing and estimation theory.</p>
-        </div>
+            </div>
 
-        <h3>Education</h3>
-        <div class="education-item">
-          <div class="college-info">
-            <img src="images/nitk-logo.png" alt="NITK Logo" class="college-logo">
-            <div class="college-details">
-              <h4>National Institute of Technology Karnataka, Surathkal</h4>
-              <p>Bachelor of Technology (B.Tech) in Electronics and Communication Engineering (ECE)</p>
-              <p class="year">2020 - 2024</p>
+            <p>Currently, I'm pursuing a <strong>Master's degree in Engineering Sciences, with a mention in Electrical Engineering</strong>, at the Faculty of Physical and Mathematical Sciences (FCFM), <a href="https://uchile.cl/" target="_blank" rel="noopener">University of Chile</a>, where I carry out my research under the supervision of <a href="https://scholar.google.com/citations?user=I6nS61cAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Martin Adams</a>. The project is funded by the <strong>U.S. Air Force Office of Scientific Research (AFOSR)</strong>.</p>
+
+            <p>Before moving to Chile, I worked at <a href="https://www.harman.com/india" target="_blank" rel="noopener">Harman International (India)</a> &mdash; first as a research intern and then as a research engineer, until February 2026 &mdash; focusing on in-cabin sensing technologies. Earlier, I spent nearly four years as an undergraduate researcher under Dr. Srihari, gaining extensive hands-on experience in radar signal processing and estimation theory.</p>
+          </div>
+
+          <h3>Education</h3>
+          <div class="edu-list">
+            <div class="card edu-card">
+              <img src="images/Coat_of_arms_of_the_University_of_Chile.svg" alt="University of Chile logo" class="college-logo">
+              <div class="college-details">
+                <h4>University of Chile &mdash; FCFM</h4>
+                <p>M.Sc. in Engineering Sciences (mention in Electrical Engineering)</p>
+                <p class="year">2026 &ndash; Present</p>
+              </div>
+            </div>
+            <div class="card edu-card">
+              <img src="images/nitk-logo.png" alt="NITK logo" class="college-logo">
+              <div class="college-details">
+                <h4>National Institute of Technology Karnataka, Surathkal</h4>
+                <p>B.Tech in Electronics and Communication Engineering (ECE)</p>
+                <p class="year">2020 &ndash; 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <h3>Experience</h3>
+          <div class="edu-list">
+            <div class="card edu-card">
+              <img src="images/Harman_International_logo.svg" alt="Harman International logo" class="college-logo">
+              <div class="college-details">
+                <h4>Harman International, India</h4>
+                <p class="role-line"><strong>Research Engineer</strong> &middot; In-Cabin Sensing <span class="year">Sep 2025 &ndash; Feb 2026</span></p>
+                <p class="role-line"><strong>Research Intern</strong> &middot; In-Cabin Sensing <span class="year">May 2025 &ndash; Aug 2025</span></p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 Dayananda B N. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/dayananda-b-n/" target="_blank" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/Daya-AWR1642" target="_blank" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://scholar.google.com/citations?user=vFFmqaAAAAAJ&hl=en" target="_blank" title="Google Scholar">
-          <i class="fas fa-graduation-cap"></i>
-        </a>
-        <a href="https://www.researchgate.net/profile/Dayananda-B-N" target="_blank" title="ResearchGate">
-          <i class="fab fa-researchgate"></i>
-        </a>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Dayananda B N</strong>
+        <p>Radar &amp; SLAM Researcher</p>
       </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/dayananda-b-n/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Daya-AWR1642" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com/citations?user=vFFmqaAAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://www.researchgate.net/profile/Dayananda-B-N" target="_blank" rel="noopener" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+      </div>
+      <p class="copyright">&copy; <span id="year">2025</span> Dayananda B N. All rights reserved.</p>
     </div>
   </footer>
 </body>
